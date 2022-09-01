@@ -8,7 +8,7 @@ import './assets/styles.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Hero />
       <Intro />

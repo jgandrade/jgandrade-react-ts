@@ -2,9 +2,14 @@
 function Hero() {
     return (
         <div className="hero">
-            <h1>Hi I'm John Glenn!</h1>
+            <div className="main-title">
+                <p>HI</p>
+                <p>I'M</p>
+                <p>JOHN</p>
+                <p>GLENN!</p>
+            </div>
             <p>a Web Developer & Interaction Designer based from Rizal Philippines</p>
-            <button className="cta">Know More</button>
+            <a href="#intro"><button className="cta">Know More</button></a>
         </div>
     )
 }

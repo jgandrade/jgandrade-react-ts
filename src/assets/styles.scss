@@ -8,3 +8,180 @@
     padding: 0;
     font-family: "Oswald", "Poppins", "Merriweather", "sans serif", "serif";
 }
+
+:root {
+    --text-primary: rgb(24, 23, 23);
+    --text-secondary: rgb(255, 255, 255);
+    --bg-primary: rgb(245, 245, 245);
+    --bg-secondary: rgb(53, 53, 53);
+    --transition-setting: all cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    --transition-setting-2: all ease-in-out;
+}
+
+::selection {
+    color: rgb(250, 99, 99);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px lightcoral;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 50px;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 0 2em;
+    background-color: var(--bg-primary);
+    box-shadow: 0px 2px 7px rgb(85, 84, 84);
+
+    img {
+        min-width: 50px;
+    }
+
+    .burger {
+        font-size: 1.1em;
+    }
+
+    .links-navigations {
+        display: none;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6em;
+    width: 100%;
+    height: 100vh;
+
+    color: var(--text-primary);
+    p {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4em;
+        p {
+            line-height: 1.2em;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0 0.1em;
+        }
+    }
+
+    button {
+        margin-top: 2em;
+        padding: 0.5em 1em;
+        cursor: pointer;
+
+        border: none;
+        border-radius: 0.5em;
+        background-color: var(--bg-secondary);
+
+        color: var(--bg-primary);
+        font-size: 0.8em;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6em;
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 4em;
+        height: 80vh;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        margin-top: 4em;
+
+        h2 + p {
+            margin-top: 1em;
+        }
+
+        h2 + p + p {
+            margin-bottom: 2em;
+        }
+
+        .certs {
+            div {
+                margin: 2em 0em;
+                border: 1px solid black;
+                img {
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6em;
+
+    .project-card {
+        border: 1px solid black;
+        border-radius: 0.5em;
+        overflow: hidden;
+
+        max-width: 250px;
+        max-height: max-content;
+
+        margin: 2em 0;
+        img {
+            width: 100%;
+        }
+
+        a + div {
+            padding: 0.5em;
+        }
+
+
+    }
+}
